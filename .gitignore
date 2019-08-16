@@ -1,0 +1,26 @@
+
+# Pasta de arquivos para teste
+.doc
+
+# Pasta de metadados do pycharm
+.idea
+
+#pasta de vitualenv do pycharm
+.venv
+
+#Pasta de chache do python
+__pycache__
+
+#Pasta de log
+log/
+
+#Pasta de arquivos do vscode
+.vscode/
+
+#Arquivo de configuração da branch music
+home_properties_driver.json
+
+#Arquivo de log do debug 
+debug.log
+
+
