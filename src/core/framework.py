@@ -8,11 +8,27 @@ Durante a primeira execução este modulo importa a driver factory assim receben
 """
 # -*- coding: utf-8 -*-
 from src.core import driver_factory 
-from src.utils.open_json import data
 from src.utils.log import logger
-import time
+import time,sys
  
-driver = driver_factory.create_driver(data["driver_path"],data["driver_link"])
+driver = ""
+
+def create(driver_path=None,driver_link=None):
+    """
+    Criar driver 
+    """
+    global driver 
+    if(driver_path is None or driver_link is None):
+        logger.critical("Driver path or driver link não informado")
+        sys.exit(1)
+    driver = driver_factory.create_driver(driver_path,driver_link)
+    
+
+def close():
+    """
+    Fecha o driver
+    """
+    driver_factory.close_driver(driver)
 
 '''    
 #---------------------------------BUTTON = BTN----------------------------------#

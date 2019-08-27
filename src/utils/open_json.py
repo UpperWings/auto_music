@@ -23,7 +23,7 @@ def open_file():
             sys.exit(1)
     except Exception as error:
         logger.critical('Erro ao abrir arquivo de configuração')
-        logger.critical(error)
+        logger.error(error)
         sys.exit(1)
     data_json = json.loads(arquivo)
     return data_json
@@ -35,7 +35,7 @@ def set_vars():
     Após armazenar retorna o dict.
     """
     logger.debug('Armazenando as o conteudo do arquivo de configuração em variaveis.')
-    home = os.path.expanduser('~')
+    open_file()
     data_json = open_file()
     data = {"driver_path": os.path.join(home,data_json['driver']['driver_path']),
             "driver_link": data_json['driver']['driver_link'],
@@ -47,5 +47,4 @@ def set_vars():
             }
     return data
 
-open_file()
 data = set_vars()

@@ -22,7 +22,7 @@ def start():
         music.login()
     except Exception as error:
         logger.critical("Processo finalizado com ERRO")
-        logger.critical(error)
+        logger.error(error)
         logger.info('#---------------PROCESSO FINALIZADO----------------#')
         print('#---------------PROCESSO FINALIZADO----------------#')
         sys.exit(1)
