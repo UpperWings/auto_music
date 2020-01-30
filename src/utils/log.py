@@ -34,6 +34,9 @@ x.setFormatter(formatter)
 logger.addHandler(x)
 logger.debug("Arquivo de log criado")
 
+cont =+ 1
+print(logger.debug('Quantidade de chamadas: ' + cont))
+print(__loader__.name)
 
 
 

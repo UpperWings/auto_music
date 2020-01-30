@@ -13,13 +13,15 @@ if not home_auto_dataloader in sys.path: sys.path.append(home_auto_dataloader)
 
 #Importações dos modulos do sistema
 from src.utils.log import logger
-from src.pages import music
+from src.pages.music import music
+from src.pages.discord import discord
 
 def start():
     print('#---------------PROCESSO INICIADO----------------#')
     logger.info('#---------------PROCESSO INICIADO----------------#')
     try:
         music.login()
+        var = 1
     except Exception as error:
         logger.critical("Processo finalizado com ERRO")
         logger.error(error)

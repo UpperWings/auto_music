@@ -12,7 +12,6 @@ from src.utils.log import logger
 import time,sys
  
 driver = ""
-
 def create(driver_path=None,driver_link=None):
     """
     Criar driver 
