@@ -12,7 +12,7 @@ from src.core import framework as fw
 USERNAME = data['user_username']
 PASSWORD = data["user_password"]
 
-INITIAL_BT_XPATH = None
+INITIAL_BT_XPATH = "//a[@class='sign-in-link style-scope ytmusic-nav-bar']"
 #"//a[@class='sign-in-link style-scope ytmusic-nav-bar']"
 LG_USERNAME_IPT_XPATH = "//input[@type='email']"
 LG_USERNAME_BTN_ID = "identifierNext"

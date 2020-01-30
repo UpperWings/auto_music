@@ -9,7 +9,7 @@ from datetime import date
 
 home = os.path.expanduser('~')
 
-PATH_LOG = home + "\\upperwings\\auto_music\\log\\"
+PATH_LOG = home + "\\Projetos\\auto_music\\log\\"
 
 if not(os.path.exists(PATH_LOG)):
     os.mkdir(PATH_LOG)

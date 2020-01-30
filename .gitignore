@@ -1,0 +1,5 @@
+# Pasta de log
+/log
+
+# Arquivo de codigo python compilado 
+*.pyc

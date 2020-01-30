@@ -1,10 +1,10 @@
 {
 	"driver": {
-		"driver_path":"upperwings\\auto_music\\driver\\chromedriver.exe",
+		"driver_path":"Projetos\\auto_music\\driver\\chromedriver.exe",
 		"driver_link":"https://music.youtube.com"
 	},
 	"user":{
-		"user_username":"user",
+		"user_username":"user@gmail.com",
 		"user_password":"pass"
 	},
 	"conf_path":{
