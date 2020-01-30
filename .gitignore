@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # Pasta de arquivos para teste
 .doc
@@ -24,3 +25,10 @@ home_properties_driver.json
 debug.log
 
 
+=======
+# Pasta de log
+/log
+
+# Arquivo de codigo python compilado 
+*.pyc
+>>>>>>> master

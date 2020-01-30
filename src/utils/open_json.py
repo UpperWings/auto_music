@@ -17,7 +17,7 @@ def open_file():
     """
     logger.debug('Abrindo arquivo de configuração.')
     try:
-        arquivo = open( home + "\\upperwings\\auto_music\\config\\properties_driver.json").read()
+        arquivo = open( home + "\\Projetos\\auto_music\\config\\properties_driver.json").read()
         if(os.path.exists(os.path.abspath(arquivo))):
             logger.critical('Arquivo de configuração não existe ou está com nome "diferente de properties_driver.json".')
             sys.exit(1)

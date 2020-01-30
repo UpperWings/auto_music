@@ -6,7 +6,7 @@ Modulo principal da aplicação, onde é iniciado a aplicação importandos os m
 import os,sys,time
 
 home = os.path.expanduser('~') # Caminho para o arquivo de log global c:\Users\UserName
-home_crm = home + "\\upperwings"
+home_crm = home + "\\Projetos"
 home_auto_dataloader = home_crm + "\\auto_music"
 #Add ao sys.path o caminho raiz do projeto
 if not home_auto_dataloader in sys.path: sys.path.append(home_auto_dataloader)
