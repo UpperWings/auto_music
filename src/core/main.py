@@ -21,6 +21,7 @@ def start():
     logger.info('#---------------PROCESSO INICIADO----------------#')
     try:
         music.login()
+        discord.login()
         var = 1
     except Exception as error:
         logger.critical("Processo finalizado com ERRO")

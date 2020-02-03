@@ -14,9 +14,13 @@ DRIVER_LINK = data["driver_link"]
 USERNAME = data['user_username']
 PASSWORD = data["user_password"]
 
-cont = 1
+def init():
+    fw.create(DRIVER_PATH,DRIVER_LINK)
 
-cont =+ 1
-print(logger.debug('Quantidade de chamadas: {}'.format(cont)))
-print(__loader__.name)
-    
+def close():
+    fw.close()
+
+def login():
+    init()
+    logger.debug('teste')
+    print("login discord")   

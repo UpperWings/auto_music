@@ -27,16 +27,12 @@ else:
         PATH_LOG = PATH_LOG + new_log
 
 logger = logging.getLogger() #instanciando objeto da classe logging
-logger.setLevel(logging.INFO)
+logger.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(module)s - %(message)s')
 x = logging.FileHandler(PATH_LOG)
 x.setFormatter(formatter)
 logger.addHandler(x)
 logger.debug("Arquivo de log criado")
-
-cont =+ 1
-print(logger.debug('Quantidade de chamadas: ' + cont))
-print(__loader__.name)
 
 
 

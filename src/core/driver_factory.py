@@ -17,7 +17,7 @@ def create_driver(driver_path,driver_link):
         driver = webdriver.Chrome(driver_path)
         driver.get(driver_link)
         driver.set_window_size(720,680)
-        driver.set_window_position(-600,150)
+        driver.set_window_position(600,150)
         return driver
     except Exception as error:
         logger.critical("Erro ao criar driver")
@@ -34,3 +34,4 @@ def close_driver(driver):
     except Exception as error:
         logger.critical("Erro ao desligar driver")
         logger.error(error)
+

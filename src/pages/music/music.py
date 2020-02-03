@@ -35,6 +35,7 @@ def login():
     Responsavel por realizar login na app
     """
     try:
+        init()
         logger.debug("Music: Realizando login")
         fw.click_btn_by_xpath(INITIAL_BT_XPATH)
         fw.write_ipt_by_xpath(LG_USERNAME_IPT_XPATH,USERNAME)
